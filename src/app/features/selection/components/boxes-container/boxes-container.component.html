@@ -1,0 +1,16 @@
+@if (store.boxesWithValues(); as boxes) {
+  <div class="boxes-wrapper">
+    <div class="boxes-row">
+      @for (box of boxes; track box.id) {
+        <div class="boxes-column">
+          <app-box [boxId]="box.id" />
+          <div
+            class="boxes-track__tick"
+            [class.boxes-track__tick--filled]="box.value !== null">
+            @if (box.value !== null) { {{ box.value }} }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+}

@@ -1,0 +1,38 @@
+:host {
+  display: block;
+}
+
+.clear-actions {
+  display: flex;
+  gap: 0.5rem;
+  height: 100%;
+}
+
+.clear-btn {
+  height: 100%;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid #ef4444;
+  border-radius: 6px;
+  background: #fff;
+  color: #ef4444;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+
+.clear-btn--current {
+  border-color: #d97706;
+  color: #d97706;
+}
+
+.clear-btn:hover {
+  background: #ef4444;
+  color: #fff;
+}
+
+.clear-btn--current:hover {
+  background: #d97706;
+  color: #fff;
+}

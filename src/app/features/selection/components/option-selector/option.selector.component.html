@@ -1,0 +1,22 @@
+@if (store.panelVisible()) {
+  @if (store.activeBox(); as activeBox) {
+    <div class="option-panel">
+      @for (group of optionGroups; track group.category) {
+        <div class="option-group">
+          <h3 class="option-group__title">{{ group.label }}</h3>
+          <div class="option-group__buttons">
+            @for (option of group.options; track option.id) {
+              <button
+                class="option-btn"
+                (click)="select(option.id)"
+                [class.option-btn--selected]="option.id === activeBox.selectedOptionId">
+                <span>{{ option.label }}</span>
+                <span class="option-btn__value">{{ option.value }}</span>
+              </button>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  }
+}

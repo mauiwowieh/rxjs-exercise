@@ -1,0 +1,47 @@
+.boxes-wrapper {
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.boxes-row {
+  display: flex;
+  gap: 0.5rem;
+  min-width: max-content;
+}
+
+.boxes-column {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+.boxes-column app-box {
+  display: block;
+  width: max-content;
+}
+
+.boxes-column .boxes-track__tick {
+  width: 100%;
+  margin-top: 0.375rem;
+}
+
+.boxes-track__tick {
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+  background: #f3f4f6;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #9ca3af;
+  flex-shrink: 0;
+  transition: background 0.12s, border-color 0.12s, color 0.12s;
+}
+
+.boxes-track__tick.boxes-track__tick--filled {
+  background: #dbeafe;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+}

@@ -1,0 +1,10 @@
+@if (vm(); as vm) {
+  <button
+    class="box-btn"
+    (click)="select()"
+    [class.box-btn--active]="vm.isActive"
+    [class.box-btn--filled]="vm.isFilled">
+    <span class="box-btn__index">{{ boxId() + 1 }}</span>
+    <span class="box-btn__label">{{ vm.label }}</span>
+  </button>
+}

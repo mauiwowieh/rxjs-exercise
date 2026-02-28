@@ -1,0 +1,18 @@
+:host {
+  display: block;
+}
+
+.total {
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  display: inline-block;
+  color: #374151;
+}
+
+.total strong {
+  color: #111;
+  font-size: 1.1rem;
+}

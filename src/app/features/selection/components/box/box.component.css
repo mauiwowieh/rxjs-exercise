@@ -1,0 +1,58 @@
+.box-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 88px;
+  padding: 0.625rem 0.5rem;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.12s, background 0.12s;
+  flex-shrink: 0;
+}
+
+.box-btn:hover {
+  border-color: #9ca3af;
+}
+
+.box-btn__index {
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #9ca3af;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.box-btn__label {
+  font-size: 0.7rem;
+  color: #6b7280;
+  text-align: center;
+  word-break: break-word;
+  line-height: 1.3;
+}
+
+.box-btn.box-btn--active {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.box-btn.box-btn--active .box-btn__index {
+  color: #3b82f6;
+}
+
+.box-btn.box-btn--active .box-btn__label {
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.box-btn.box-btn--filled .box-btn__label {
+  color: #065f46;
+  font-weight: 500;
+}
+
+.box-btn.box-btn--active.box-btn--filled .box-btn__label {
+  color: #1d4ed8;
+}

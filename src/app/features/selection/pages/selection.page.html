@@ -1,0 +1,10 @@
+<div class="page">
+  <h1 class="page__title">Judges' scores</h1>
+  <div class="page__instances">
+    @for (container of containers; track container.id) {
+      <selection-instance
+        [containerId]="container.id"
+        [title]="container.title" />
+    }
+  </div>
+</div>

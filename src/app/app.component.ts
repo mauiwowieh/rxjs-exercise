@@ -15,10 +15,9 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { SelectionPageComponent } from './features/selection/pages/selection.page';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [SelectionPageComponent],
-  templateUrl: './app.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-root',
+    imports: [SelectionPageComponent],
+    templateUrl: './app.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {}

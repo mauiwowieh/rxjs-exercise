@@ -3,12 +3,11 @@ import { SelectionStore, SelectionStoreType } from '../../../../state/selection.
 import { BoxComponent } from '../box/box.component';
 
 @Component({
-  standalone: true,
-  selector: 'boxes-container',
-  imports: [BoxComponent],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  templateUrl: './boxes-container.component.html',
-  styleUrl: './boxes-container.component.css',
+    selector: 'boxes-container',
+    imports: [BoxComponent],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    templateUrl: './boxes-container.component.html',
+    styleUrl: './boxes-container.component.css'
 })
 export class BoxesContainerComponent {
   readonly store = inject(SelectionStore) as unknown as SelectionStoreType;

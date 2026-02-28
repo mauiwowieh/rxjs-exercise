@@ -6,18 +6,17 @@ import { OptionSelectorComponent } from '../option-selector/option.selector.comp
 import { TotalValueComponent } from '../total-value/total-value.component';
 
 @Component({
-  standalone: true,
-  selector: 'selection-instance',
-  imports: [
-    BoxesContainerComponent,
-    ClearButtonComponent,
-    TotalValueComponent,
-    OptionSelectorComponent,
-  ],
-  providers: [SelectionStore],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  templateUrl: './selection-instance.component.html',
-  styleUrl: './selection-instance.component.css',
+    selector: 'selection-instance',
+    imports: [
+        BoxesContainerComponent,
+        ClearButtonComponent,
+        TotalValueComponent,
+        OptionSelectorComponent,
+    ],
+    providers: [SelectionStore],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    templateUrl: './selection-instance.component.html',
+    styleUrl: './selection-instance.component.css'
 })
 export class SelectionInstanceComponent implements OnInit {
   readonly containerId = input.required<string>();
